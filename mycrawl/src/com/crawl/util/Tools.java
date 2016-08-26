@@ -30,5 +30,8 @@ public class Tools {
         return true;
     }
 
+    public static void main(String[] args) {
+        deleteFiles();
+    }
 
 }
