@@ -128,6 +128,10 @@ public class JDBCTools {
 	}
 
 	public static void main(String[] args) {
-
+		try {
+			System.out.println(getConnection());
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 }

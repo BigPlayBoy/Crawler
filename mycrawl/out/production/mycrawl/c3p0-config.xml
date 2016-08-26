@@ -33,7 +33,9 @@
 		<property name="minPoolSize">50</property>
 		<!--连接池中保留的最大连接数。Default: 15 -->
 		<property name="maxPoolSize">1000</property>
-		<property name="jdbcUrl">jdbc:sqlite://d:/zhiHu.db
+		<!--<property name="jdbcUrl">jdbc:sqlite://d:/zhiHu.db-->
+		<property name="jdbcUrl">jdbc:sqlite:src/resources/zhiHu.db
+
 		</property>
 		<property name="driverClass">org.sqlite.JDBC
 		</property>

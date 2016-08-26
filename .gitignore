@@ -1,5 +1,6 @@
 *.class
 etilqs_*
+*.log
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 

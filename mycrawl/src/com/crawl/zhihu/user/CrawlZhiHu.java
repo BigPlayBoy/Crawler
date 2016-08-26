@@ -41,8 +41,9 @@ public class CrawlZhiHu {
                 new ArrayBlockingQueue<Runnable>(100), new ThreadPoolExecutor.DiscardOldestPolicy(),storage);
         HttpGet getRequest = new HttpGet(startUrl);
         getWebPagethreadPool.execute(new GetWebPageTask(zhClient,getRequest,storage,getWebPagethreadPool,parseWebPagethreadPool));
-        et2 = new ThreadPoolMonitor(getWebPagethreadPool,"获取网页线程池--");
         et1 = new ThreadPoolMonitor(parseWebPagethreadPool,"解析网页线程池--");
+        et2 = new ThreadPoolMonitor(getWebPagethreadPool,"获取网页线程池--");
+
         new Thread(et1).start();
         new Thread(et2).start();
         while(true){
